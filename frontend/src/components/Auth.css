@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Adding a mono font for hacking style */
+
+.auth-page {
+  background: linear-gradient(135deg, #291931, #993C57);
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.auth-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-form-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  width: 350px; /* Make the box less wide */
+}
+
+.auth-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-content input {
+  font-family: 'Roboto Mono', monospace; /* Change the font to a mono font for a hacking style */
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.auth-content button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #993C57; /* Purple button matching the background gradient */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.auth-content button:hover {
+  background-color: #7b2d45; /* Darker purple for hover effect */
+}
+
+.auth-links {
+  margin-top: 20px;
+}
+
+.auth-links a {
+  color: #993C57;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+  color: #7b2d45;
+}

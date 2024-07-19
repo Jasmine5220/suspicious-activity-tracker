@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Adding a mono font for hacking style */
+
+.about-page {
+  background: linear-gradient(135deg, #291931, #993C57);
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-flicker-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: about-flicker 1.5s infinite;
+  width: 80%; /* Increase the width of the box */
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-main-content {
+  font-family: 'Roboto Mono', monospace; /* Change the font to a mono font for a hacking style */
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: pre-wrap; /* Handle newlines and spaces */
+}
+
+@keyframes about-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

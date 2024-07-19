@@ -1,0 +1,69 @@
+.landing-page {
+  background-image: url("C:/Users/Jasmine Jayaswal/OneDrive/Desktop/EyeOn/frontend/public/background.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Audiowide', sans-serif;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: -50px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.content h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.content h1:hover span {
+  transform: scale(1.2);
+  color: #F6E1E1;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.explore-btn {
+  font-family: 'Audiowide', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-top: 20px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
