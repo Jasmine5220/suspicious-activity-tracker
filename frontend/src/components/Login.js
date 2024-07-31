@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './Auth.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,6 +7,7 @@ import Footer from './Footer';
 const Login = () => {
   const [form, setForm] = useState({ userId: '', password: '' });
   const [message, setMessage] = useState('');
+  const navigate= useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -23,6 +24,9 @@ const Login = () => {
     });
     const result = await response.json();
     setMessage(result.message);
+    if (response.ok){
+      navigate('/1');
+    }
   };
 
   return (
