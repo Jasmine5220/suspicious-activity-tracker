@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .page1-container {
-  background: linear-gradient(135deg, #291931, #993C57);
+  background: linear-gradient(135deg, #291931, #333132);
   color: white;
   font-family: 'Audiowide', sans-serif;
   display: flex;
@@ -11,6 +11,8 @@
 }
 
 .page1-header {
+
+  
   text-align: center;
   margin-bottom: 20px;
 }
