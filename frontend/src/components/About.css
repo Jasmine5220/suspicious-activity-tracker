@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+.about-page {
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('C:\Users\Jasmine Jayaswal\OneDrive\Desktop\EyeOn\frontend\public\20220511-Internet-Security-Neon-Flicker.gif'); /* Update with the path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 13vh;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: center;
+  margin-left: 0vh;
+}
+
+.about-flicker-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: about-flicker 1.5s infinite;
+  width: 55%;
+}
+
+.about-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content p {
+  font-size: 1rem;
+}
+
+.about-main-content {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+@keyframes about-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
